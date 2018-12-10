@@ -48,7 +48,8 @@ namespace projeA
            
             StreamWriter sw = File.AppendText("H:/Visual Studio 2017/Projects/projeA/kayitlar.txt");
             sw.WriteLine("x: "+e.X+"y: "+e.Y +"\n");
-            sw.Close();
+            sw.Close(); 
+
             
         }
 
