@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +44,14 @@ namespace projeA
             Pen pencil=new Pen(Color.Red,2);
            
             g.DrawEllipse(pencil,e.X-5,e.Y-5,10,16);
+
+           
+            StreamWriter sw = File.AppendText("H:/Visual Studio 2017/Projects/projeA/kayitlar.txt");
+            sw.WriteLine("x: "+e.X+"y: "+e.Y +"\n");
+            sw.Close();
+            
         }
+
+
     }
 }
